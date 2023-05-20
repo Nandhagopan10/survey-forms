@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="tittle">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form method="post" action='https://survey-form.org'>
+      <fieldset>
+        <label for="name">Name <input id="name" name="name" type="text" required placeholder="Enter your Name" /></label>
+       
+        <label for="email">Email <input id="email" name="email" type="email" required placeholder="Enter your Email"/></label>
+        <label for="number">Mobile<input id="number" name="number" type="number" required placeholder="Enter your Number "/></label>
+        <label for="age">Age(optional)<input id="age" type="number" name="age" min="13" max="120" placeholder="Enter your Age"/></label>
+      </fieldset>
+      <fieldset>
+        <label for="sex">Sex</label>
+        <label for="male"><input id="male" type="radio" name="sex" class="inline" /> Male</label>
+        <label for="female"><input id="female" type="radio" name="sex" class="inline" /> Female</label>
+        <label for="others"><input id="others" type="radio" name="sex" class="inline" /> Female</label>
+      </fieldset>
+      <br>
+      <label for="language">Languages Known</label>
+        <input id="english" type="checkbox" required name="english" class="inline" />English
+        <input id="malayalam" type="checkbox" required name="malayalam" class="inline" />Malayalam
+        <input id="hindi" type="checkbox" required name="hindi" class="inline" />Hindi
+        <input id="french" type="checkbox" required name="french" class="inline" />French
+        <input id="german" type="checkbox" required name="german" class="inline" />German
+
+        <br>
+        <label for="picture">Upload your image<input id="picture" type="file" name="file" /></label>
+        <br>
+        <label for="role">Select your current role
+          <select id="referrer" name="referrer">
+            <option value="">(select current role)</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <br>
+        <label for="address">Address<Address></Address>
+          <textarea id="address" name="address" rows="3" cols="30" placeholder="Address"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
